@@ -34,11 +34,20 @@
   </head>
   <body>
     <article class="product-card">
-      <img
-        class="product-img"
-        src="images/image-product-mobile.jpg"
-        alt="picture of a perfume"
-      />
+      <picture>
+        <!--desktop image-->
+        <source
+          srcset="images/image-product-desktop.jpg"
+          media="(min-width: 1440px)"
+          class="product-img"
+        />
+        <!--mobile image-->
+        <img
+          src="images/image-product-mobile.jpg"
+          alt="picture of perfume"
+          class="product-img"
+        />
+      </picture>
       <section class="product-information">
         <p class="product-category">Perfume</p>
 
